@@ -5,6 +5,14 @@
   font-family: Lato, sans-serif;
 }
 
+/* Normalize */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
 /* Header */
 .header {
   width: 500px;
