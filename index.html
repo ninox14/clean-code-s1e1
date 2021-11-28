@@ -16,66 +16,48 @@
       </a>
     </header>
     <main class="content">
+      <h3 class="add-task__title title">
+        <label for="new-task">Add Item</label>
+      </h3>
       <section class="add-task" id="topSectionForAddingElementToList">
-        <h3 class="add-task__title title">
-          <label for="new-task">Add Item</label>
-        </h3>
         <div class="add-task__block task-row-wrapper">
           <input class="add-task__block_input input-text" id="new-task" type="text">
           <button class="add-task__block_btn button">Add</button>
         </div>
       </section>
       <h3 class="title">Todo</h3>
-      <ul class="todo section" id="incompleteTasks">
-        <li class="task-wrap">
+      <section class="todo section" id="incomplete-tasks">
+        <div class="task-wrap">
           <input class="task-wrap__ceckbox" type="checkbox">
-          <label class="task-wrap__title ">Pay Bills</label>
+          <label class="task-wrap__title">Pay Bills</label>
           <input class="task-wrap__input input-text " type="text">
-          <button class="task-wrap__btn task-wrap__btn--edit button edit">Edit</button>
-          <button class="task-wrap__btn task-wrap__btn--delete button delete">
+          <button class="task-wrap__btn task-wrap__btn--edit button">Edit</button>
+          <button class="task-wrap__btn task-wrap__btn--delete button">
             <img class="task-wrap__btn--delete_img" src="./remove.svg">
           </button>
-        </li>
-        <!-- <li class="editMode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input class="task" type="text" value="Go Shopping">
-          <button class="edit">Save</button>
-          <button class="delete">
-            <img src="./remove.svg">
-          </button>
-        </li> -->
-        <li class="task-wrap editMode">
+        </div>
+        <div class="task-wrap editMode">
           <input class="task-wrap__ceckbox" type="checkbox">
           <label class="task-wrap__title">Pay Bills</label>
           <input class="task-wrap__input input-text" type="text" value="Go Shopping">
-          <button class="task-wrap__btn task-wrap__btn--edit button edit">Save</button>
-          <button class="task-wrap__btn task-wrap__btn--delete button delete">
+          <button class="task-wrap__btn task-wrap__btn--edit button">Save</button>
+          <button class="task-wrap__btn task-wrap__btn--delete button">
             <img class="task-wrap__btn--delete_img" src="./remove.svg">
           </button>
-        </li>
-      </ul>
-      <h3 class="title" >Completed</h3>
-      <ul class="completed section" id="completed-tasks">
-        <!-- <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input class="task" type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg">
-          </button>
-        </li> -->
-        <li class="task-wrap">
+        </div>
+      </section>
+      <h3 class="title">Completed</h3>
+      <section class="completed section" id="completed-tasks">
+        <div class="task-wrap">
           <input class="task-wrap__ceckbox" type="checkbox" checked>
           <label class="task-wrap__title">See the Doctor</label>
           <input class="task-wrap__input input-text" type="text">
-          <button class="task-wrap__btn task-wrap__btn--edit button edit">Edit</button>
-          <button class="task-wrap__btn task-wrap__btn--delete button delete">
+          <button class="task-wrap__btn task-wrap__btn--edit button">Edit</button>
+          <button class="task-wrap__btn task-wrap__btn--delete button">
             <img class="task-wrap__btn--delete_img" src="./remove.svg">
           </button>
-        </li>
-      </ul>
+        </div>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
