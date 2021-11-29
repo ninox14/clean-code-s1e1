@@ -160,12 +160,12 @@ input {
   display: none;
 }
 
-.editMode .task-wrap__input {
+.task-wrap--edit_mode .task-wrap__input {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .task-wrap__title {
+.task-wrap--edit_mode .task-wrap__title {
   display: none;
 }
 
