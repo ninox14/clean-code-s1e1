@@ -37,7 +37,7 @@ var createNewTaskElement=function(taskString){
     label.classList.add('task-wrap__title');
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.classList.add('task-wrap__ceckbox');
+    checkBox.classList.add('task-wrap__checkbox');
     editInput.type="text";
     editInput.classList.add('task-wrap__input', 'input-text');
 
@@ -159,7 +159,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox = taskListItem.querySelector('.task-wrap__ceckbox');
+    var checkBox = taskListItem.querySelector('.task-wrap__checkbox');
     var editButton = taskListItem.querySelector('.task-wrap__btn--edit');
     var deleteButton = taskListItem.querySelector('.task-wrap__btn--delete');
 
